@@ -1,0 +1,36 @@
+@use 'variables'
+
+@mixin center
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin btn
+    padding: 1rem 1.2rem
+    color: variables.$text-color
+    background: variables.$gradient
+    text-decoration: none
+    border-radius: 3rem
+
+@mixin gradient-border
+    content: ""
+    background: variables.$gradient
+    height: 3px
+    width: 30%
+
+@mixin img
+    @media( max-width: 2537px)
+        @content
+
+@mixin responsive
+    @media( max-width: 1250px)
+        @content
+
+@mixin responsive-2
+    @media( max-width: 800px)
+        @content
+
+
+
+ 
+    

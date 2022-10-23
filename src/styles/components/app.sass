@@ -1,0 +1,28 @@
+@use '../variables'
+@use '../mixins'
+
+#portifolio
+    display: flex
+    flex-wrap: wrap
+    padding: 3rem
+    gap: 3rem
+    
+    @include mixins.responsive
+        display: flex
+        flex-direction: column
+
+        
+
+    h1
+        width: 100%
+        font-size: 5rem
+        margin-bottom: 4rem
+        background: variables.$gradient
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+
+        @include mixins.responsive-2
+            font-size: 3rem
+
+    
+
