@@ -19,11 +19,19 @@
 
     .technology-card
         @include mixins.center
+        flex-direction: column
+        text-align: center
         gap: 1rem
         padding: 1rem
         border: 1px solid #333
         width: 45%
         border-radius: variables.$card-border-radius
+
+        p
+            max-width: 400px
+            text-align: left
+            margin-left: 10px
+
 
         @include mixins.responsive-2
             width: 100%
